@@ -1,4 +1,4 @@
-package com.carlos.worker;
+package com.carlos.hrworker;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

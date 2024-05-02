@@ -23,7 +23,7 @@ import com.carlos.hrworker.repositories.WorkerRepository;
 public class WorkerResource {
 
 	private static Logger logger = LoggerFactory.getLogger(WorkerResource.class);
-	
+
 	@Value("${test.config}")
 	private String testConfig;
 
@@ -38,7 +38,7 @@ public class WorkerResource {
 		logger.info("CONFIG = " + testConfig);
 		return ResponseEntity.noContent().build();
 	}
-	
+
 	@GetMapping
 	public ResponseEntity<List<Worker>> findAll() {
 		List<Worker> list = repository.findAll();
